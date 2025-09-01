@@ -1,0 +1,138 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f7f9fc;
+  color: #1a1a1a;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+nav a.active {
+  font-weight: 600;
+  color: #000;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile .avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Heading */
+.container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.container .subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+/* Form */
+form {
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  resize: none;
+}
+
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+/* Sliding Animation */
+.slide-in {
+  animation: slideIn 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Feedback</title>
+  <link rel="stylesheet" href="feadback.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="icon">📅</span> Classroom Scheduler
+    </div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#" class="active">Timetables</a>
+      <a href="#">Rooms</a>
+      <a href="#">Courses</a>
+      <a href="#">Users</a>
+    </nav>
+    <div class="profile">
+      <span class="bell">🔔</span>
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg" alt="User" class="avatar">
+    </div>
+  </header>
+
+  <!-- Feedback Form -->
+  <main class="container slide-in">
+    <h2>Submit Your Feedback</h2>
+    <p class="subtitle">
+      We value your input. Please share your comments, suggestions, or report any issues.
+    </p>
+    <form>
+      <label for="feedback-type">Feedback Type</label>
+      <select id="feedback-type" required>
+        <option value="">Select a feedback category</option>
+        <option value="bug">Bug Report</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="general">General Feedback</option>
+      </select>
+
+      <label for="feedback">Feedback</label>
+      <textarea id="feedback" rows="5" placeholder="Please provide details here..." required></textarea>
+
+      <button type="submit">➤ Submit Feedback</button>
+    </form>
+  </main>
+</body>
+</html>

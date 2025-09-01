@@ -1,0 +1,116 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #f9fafb;
+  color: #111827;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  animation: slideDown 1s ease;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btns button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btns button.download {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.btns button:hover {
+  opacity: 0.9;
+}
+
+.container {
+  text-align: center;
+  padding: 30px 20px;
+  animation: slideUp 1.2s ease;
+}
+
+.container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.container p {
+  margin: 6px 0;
+  color: #6b7280;
+}
+
+table {
+  width: 95%;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  animation: slideUp 1.5s ease;
+}
+
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 18px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #f3f4f6;
+  font-weight: 600;
+  text-align: center;
+}
+
+td b {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 3px;
+}
+
+td {
+  vertical-align: top;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.lunch {
+  text-align: center;
+  font-style: italic;
+  color: #6b7280;
+  background: #f9fafb;
+}
+
+/* Sliding Animations */
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

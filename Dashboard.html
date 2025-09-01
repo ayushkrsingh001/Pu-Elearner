@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuVerse Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">⭐ PuVerse</div>
+    <ul class="menu">
+        <li class="active">📊 Dashboard</li>
+        <li><a href="timetable.html"  id="timet">🗓 Timetables</a></li>
+        <li>🏫 Classrooms</li>
+        <li>👨‍🏫 Lecturers</li>
+        <li>📚 Courses</li>
+        <li><a href="setting.html">⚙️ Settings</a></li>
+    </ul>
+    <div class="support">
+        <p>Need Help?<br>Contact our support team.</p>
+        <button><a href="feedback.html">Contact Support</a></button>
+    </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <!-- Header -->
+    <header class="header">
+        <h2>Dashboard Overview</h2>
+        <div class="welcome">
+            Welcome back, <b>Mr. Admin!</b>
+        </div>
+        <div class="user-info">
+        <span class="notifications">
+            🔔<span class="badge">3</span>
+        </span>
+            <div class="user">
+            <span>👤</span>
+            <div>
+                <p>Mr. Admin</p>
+                <small>Administrator</small>
+            </div>
+            </div>
+        </div>
+        </header>
+
+        <!-- Stats Cards -->
+        <section class="stats">
+        <div class="card blue">
+            <p>Active Timetables</p>
+            <h3>12</h3>
+        </div>
+        <div class="card yellow">
+            <p>Pending Approvals</p>
+            <h3>5</h3>
+        </div>
+        <div class="card green">
+            <p>Available Classrooms</p>
+            <h3>34</h3>
+        </div>
+        <div class="card purple">
+            <p>Scheduling Conflicts</p>
+            <h3>2</h3>
+        </div>
+        </section>
+
+    <!-- Quick Actions + Recent Activity -->
+    <section class="main-section">
+        
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <h4>Quick Actions</h4>
+            <div class="actions-grid">
+            <div class="action">
+                ➕ Generate New Timetable
+                <br>
+                <small>Start the automated scheduling process.</small>
+            </div>
+            <div class="action">
+                📋 Review Timetables
+                <br>
+                <small>View and manage existing schedules.</small>
+            </div>
+            <div class="action">
+                🔄 Manage Requests
+                <br>
+                <small>Approve or deny schedule change requests.</small>
+            </div>
+            <div class="action">
+                📊 View Reports
+                <br>
+                <small>Analyze scheduling data and metrics.</small>
+            </div>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="recent-activity">
+            <h4>Recent Activity</h4>
+            <ul>
+            <li>⬆️ New timetable "Spring 2025" generated. <span>15 minutes ago</span></li>
+            <li>✅ Request from Dr. Smith approved. <span>1 hour ago</span></li>
+            <li>⚠️ Conflict detected in "CS101" schedule. <span>3 hours ago</span></li>
+            <li>➕ New lecturer "Dr. Alice Johnson" added. <span>Yesterday</span></li>
+            </ul>
+        </div>
+        
+        </section>
+    </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
