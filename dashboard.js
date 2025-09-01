@@ -4,4 +4,3 @@
       this.closest("li").classList.add("active");
     });
   });
-
